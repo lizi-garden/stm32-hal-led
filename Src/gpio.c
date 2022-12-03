@@ -26,9 +26,9 @@ void LED_GPIO_Init(void)
 
 void LED_GPIO_DeInit(void)
 {
-    HAL_DeInit(LED_R_Port, LED_R_Pin);
-    HAL_DeInit(LED_G_Port, LED_G_Pin);
-    HAL_DeInit(LED_B_Port, LED_B_Pin);
+    HAL_GPIO_DeInit(LED_R_Port, LED_R_Pin);
+    HAL_GPIO_DeInit(LED_G_Port, LED_G_Pin);
+    HAL_GPIO_DeInit(LED_B_Port, LED_B_Pin);
 
     return;
 }
@@ -55,8 +55,8 @@ void KEY_GPIO_Init(void)
 
 void KEY_GPIO_DeInit(void)
 {
-    HAL_DeInit(KEY1_Port, KEY1_Pin);
-    HAL_DeInit(KEY2_Port, KEY2_Pin);
+    HAL_GPIO_DeInit(KEY1_Port, KEY1_Pin);
+    HAL_GPIO_DeInit(KEY2_Port, KEY2_Pin);
 
     return;
 }
